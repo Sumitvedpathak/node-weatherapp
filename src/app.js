@@ -4,6 +4,8 @@ const hbs = require('hbs')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const port = proce.env.PORT || 3000
+
 
 const publicFolder = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname,'../templates/views')
@@ -70,6 +72,6 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen(3000,()=>{
-    console.log('Server Started')
+app.listen(port,()=>{
+    console.log('Server Started on ' + port)
 })

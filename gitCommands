@@ -1,0 +1,18 @@
+Git Bash
+Create SSH
+ls -a -l ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "Comment/email address"
+eval $(ssh-agent -s) -- starts ssh agent
+ssh-add -K ~/.
+
+cat ~/.ssh/id_rsa.pub --to get public key
+
+ssh -T git@github.com -- to test authenticated with Github
+
+git push origin HEAD:main -- to push code to github
+
+
+Heroku
+heroku login
+heroku keys:add --adds ssh keys to
+heroku create sumitvedpathak-weather-app
