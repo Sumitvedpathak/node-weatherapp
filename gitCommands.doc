@@ -4,7 +4,7 @@ ls -a -l ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "Comment/email address"
 eval $(ssh-agent -s) -- starts ssh agent
 ssh-add -K ~/.
-cat ~/.ssh/id_rsa.pub --to get public key
+cat ~/.ssh/id_rsa.pub --to get public key, copy it an paste it in github settings
 ssh -T git@github.com -- to test authenticated with Github
 
 --To push the code to git first time
