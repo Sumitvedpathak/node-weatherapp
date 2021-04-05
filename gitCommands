@@ -11,6 +11,12 @@ ssh -T git@github.com -- to test authenticated with Github
 
 git push origin HEAD:main -- to push code to github
 
+-- to add changes to git
+git status
+git stage .
+git commit -m ""
+git push
+
 
 Heroku
 heroku login
