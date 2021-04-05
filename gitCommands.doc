@@ -4,11 +4,10 @@ ls -a -l ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "Comment/email address"
 eval $(ssh-agent -s) -- starts ssh agent
 ssh-add -K ~/.
-
 cat ~/.ssh/id_rsa.pub --to get public key
-
 ssh -T git@github.com -- to test authenticated with Github
 
+--To push the code to git first time
 git push origin HEAD:main -- to push code to github
 
 -- to add changes to git
@@ -18,7 +17,13 @@ git commit -m ""
 git push
 
 
-Heroku
+-- to see all our remotes connected 
+git remote
+
+
+Heroku setup
 heroku login
 heroku keys:add --adds ssh keys to
-heroku create sumitvedpathak-weather-app
+heroku create sumitvedpathak-weather-app --creates an web app in huroku
+git push heroku main -- pushes the git code to heroku to above set domain
+
