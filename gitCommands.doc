@@ -27,3 +27,9 @@ heroku keys:add --adds ssh keys to
 heroku create sumitvedpathak-weather-app --creates an web app in huroku
 git push heroku main -- pushes the git code to heroku to above set domain
 
+
+
+Keep all local dependency
+TO save module as dev dependency
+    npm install nodemon --save-dev
+
